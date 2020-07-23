@@ -1,10 +1,7 @@
-import React from 'react'
-import Layout from '../../Layout'
+import React from 'react';
 
 function Exchange(props) {
-    return (
-            <h2>Exchange</h2>
-    )
+  return <h2>Exchange</h2>;
 }
 
-export default Exchange
+export default Exchange;

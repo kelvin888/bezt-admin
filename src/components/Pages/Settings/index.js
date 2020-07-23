@@ -1,10 +1,7 @@
-import React from 'react'
-import Layout from '../../Layout'
+import React from 'react';
 
 function Settings(props) {
-    return (
-        <h2>Settings</h2>
-    )
+  return <h2>Settings</h2>;
 }
 
-export default Settings
+export default Settings;

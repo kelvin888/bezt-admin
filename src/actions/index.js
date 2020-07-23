@@ -1,17 +1,13 @@
-import axios from 'axios'
 // import { easyMartBackendURL, endPoints } from '../util/ServerConnection'
 // const cartUrl = `${easyMartBackendURL['url']}/${endPoints['getCart']}`;
 
-
-
 export const signUserIn = (profile) => {
-    console.log('is it here?', profile)
-    return {
-        type: 'SIGNIN_USER',
-        profile
-    }
-}
-
+  console.log('is it here?', profile);
+  return {
+    type: 'SIGNIN_USER',
+    profile,
+  };
+};
 
 // export const getBrands =() => {
 //     return  function(dispatch) {
@@ -28,6 +24,3 @@ export const signUserIn = (profile) => {
 
 //     }
 // }
-
-
-
