@@ -1,0 +1,127 @@
+//	Headings
+
+// @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+$NunitoExtraLight:"Nunito-ExtraLight";
+$NunitoLight:"Nunito-Light";
+$NunitoRegular:"Nunito-Regular";
+$NunitoSemiBold:"Nunito-SemiBold";
+$NunitoBold:"Nunito-Bold";
+$NunitoExtraBold:"Nunito-ExtraBold";
+$NunitoBlack:"Nunito-Black";
+
+
+@font-face{
+  font-family: $NunitoLight;
+  src: url('../../fonts/Nunito-ExtraLight.ttf') format('truetype');  
+ } 
+ 
+ @font-face{
+  font-family: $NunitoExtraLight;
+  src: url('../../fonts/Nunito-Light.ttf') format('truetype');  
+ } 
+
+ @font-face{
+  font-family: $NunitoRegular;
+  src: url('../../fonts/Nunito-Regular.ttf') format('truetype');  
+ } 
+
+ @font-face{
+  font-family: $NunitoSemiBold;
+  src: url('../../fonts/Nunito-SemiBold.ttf') format('truetype');  
+ } 
+
+ @font-face{
+  font-family: $NunitoBold;
+  src: url('../../fonts/Nunito-Bold.ttf') format('truetype');  
+ } 
+
+ @font-face{
+  font-family: $NunitoExtraBold;
+  src: url('../../fonts/Nunito-ExtraBold.ttf') format('truetype');  
+ } 
+
+ @font-face{
+  font-family: $NunitoBlack;
+  src: url('../../fonts/Nunito-Black.ttf') format('truetype');  
+ } 
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6{
+  font-family: $NunitoBlack;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+
+.gigantic{
+  font-size: 110px;
+  line-height: 1.09;
+  letter-spacing: -2px;
+}
+
+.huge, h1{
+  font-size: 68px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  font-weight: 900;
+  @media only screen and (max-width: 680px){
+    font-size: 44px;
+  }    
+}
+
+
+.large, h2{
+  font-size: 42px;
+  line-height: 1.14;
+  @media only screen and (max-width: 680px){
+    font-size: 32px;
+  }    
+}
+
+
+.bigger, h3{
+  font-size: 26px;
+  line-height: 1.38;
+  font-weight: 500;
+  @media only screen and (max-width: 680px){
+    font-size: 22px;
+  }    
+}
+
+.big, h4{
+  font-size: 22px;
+  line-height: 1.38;
+  @media only screen and (max-width: 680px){
+    font-size: 18px;
+  }    
+} 
+
+.small, small{
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+// Basic Text Style
+
+p{
+  margin: 0 0 20px 0;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+em{
+  font-style: italic;
+}
+
+strong{
+  font-weight: bold;
+}
+
+hr{
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}

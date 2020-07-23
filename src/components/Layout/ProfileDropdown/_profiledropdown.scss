@@ -1,0 +1,50 @@
+.profile_dropdown{
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.17);
+    background: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 177px;
+    width: 200px;
+    z-index: 5;
+    
+    .profile_dropdown_items{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        .profile_dropdown_item{
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            color: #707070;
+            cursor: pointer;
+            .profile_dropdown_item_icon{
+                margin-right: 15px;
+                font-size: 21px;
+            }
+            .profile_dropdown_item_text{
+                font-family: $NunitoBold;
+            }
+        }
+
+        li + li {
+            border-top: solid 1px #edf0f6;
+        }
+    }
+
+      .profile_dropdown_items::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;          
+        right: 2px;
+        top: 0;
+        box-sizing: border-box;
+        border: 1em solid black;
+        border-color: transparent transparent #ffffff #ffffff;
+        transform-origin: 0 0;
+        transform: rotate(135deg);
+        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1);
+        }
+}

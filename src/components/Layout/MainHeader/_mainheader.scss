@@ -1,0 +1,245 @@
+.main_header{
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+    // left: 210px;
+    height: 70px;
+    border-bottom: solid 2px #EDF0F6;
+    border-right: solid 2px #EDF0F6;
+
+    .header_items_list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+
+        li.hamburger_section{
+            .hamburger_section .hamburger_icon{
+                display: none;
+            }        
+        }
+
+        @media screen and (max-width: 320px){
+
+            li.hamburger_section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .hamburger_icon_container{
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.2);
+    
+                    .hamburger_icon{
+                        font-size: 32px;
+                        color: $primary-color;
+                    }
+                }           
+            }
+              
+        }
+
+        li.logo_section{
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .logo_title{
+                font-family: $NunitoBold;
+                font-size: 25px;
+            }
+
+            .logo_icon{
+                margin: 0 20px;
+                font-size: 32px;
+                color: $primary-color;
+            }
+        }
+
+        
+        @media screen and (max-width: 320px){
+
+            .logo_section .logo_icon{
+                display: none;
+            }
+              
+        }
+        
+
+        .notifications_section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .notifications_badge{
+                background: $secondary-color;
+                font-family: $NunitoRegular;
+                color: #ffffff;
+                width: 15px;
+                height: 15px;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                left: 18px;
+                top: 15px;
+                font-size: 10px;
+            }
+
+            .notifications_icon{
+                margin: 0 10px;
+                font-size: 25px;
+                cursor: pointer;
+            }
+
+            .notifications_text{
+                font-family: $NunitoRegular;
+                font-weight: 900;
+                border-right: solid 1px #ccc;
+                padding-right: 50px;
+                line-height: 30px;
+                color: #707070;
+                cursor: pointer;
+            }
+        }
+
+        @media screen and (max-width: 320px){
+
+            .notifications_section .notifications_text{
+                display: none;
+            }
+
+            .notifications_section .notifications_badge{
+                display: none;
+            }
+
+            .notifications_section .notifications_icon{
+                display: none;
+            }
+        }
+
+        .search_section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #707070;
+
+            .search_icon{
+                line-height: 30px;
+                padding: 0 30px;
+                font-size: 30px;
+                border-right: solid 1px #ccc;
+                cursor: pointer;
+            }
+        }
+
+        @media screen and (max-width: 320px){
+
+            .search_section{
+                display: none;
+            }
+        }
+
+        .user_account{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #707070;
+            cursor: pointer;
+
+            img{
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                margin-left: 30px;
+            }
+
+            .username{
+                font-family: $NunitoRegular;
+                margin: 0 20px;
+                font-weight: 900;
+            }
+
+            .account_caret{
+                margin-right: 20px;
+                font-size: 30px;
+                border-right: solid 1px #ccc;
+                padding-right: 25px;
+                line-height: 30px;
+                font-weight: 500;   
+            }
+        }
+
+        @media screen and (max-width: 320px){
+
+            .user_account{
+                display: none;
+            }
+        }
+
+        .transactions_section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            color: #707070;
+            position: relative;
+            cursor: pointer;
+
+            .transactions_icon{
+                margin: 0 10px;
+                font-size: 28px;
+                font-weight: 500;   
+            }
+
+            .transactions_text{
+                font-family: $NunitoRegular;
+                font-weight: 900;
+            }
+
+            .transactions_badge{
+                background: $secondary-color;
+                font-family: $NunitoRegular;
+                color: #ffffff;
+                width: 15px;
+                height: 15px;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                position: absolute;
+                right: 30px;
+                top: 15px;
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width: 320px){
+
+            .transactions_section .transactions_text{
+                display: none;
+            }
+
+            .transactions_section .transactions_badge{
+                display: none;
+            }
+        }
+        
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .main_header{
+        width: 100% !important;
+        left: 0px !important;
+    }
+}

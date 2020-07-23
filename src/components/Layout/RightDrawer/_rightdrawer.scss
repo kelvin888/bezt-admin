@@ -1,0 +1,226 @@
+.right_drawer{
+    transform: translateX(380px);
+    width: 360px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    z-index: 5;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.17);
+    transition: all cubic-bezier(0.17, 0.89, 0.3, 1.06) .7s;
+
+    .top_drawer_section{
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-bottom: solid .5px #Ccc;
+        cursor: pointer;
+
+        .collapse_text{
+            font-family: $NunitoBold;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .collapse_icon_container{
+            background-color: #C0E5CF;
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .collapse_icon{
+                color: $primary-color;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .transaction_type_section{
+        padding: 35px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid .5px #Ccc;
+
+
+        .transaction_type_section_label{
+            font-family: $NunitoBold;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width:320px){
+            .transaction_type_section_label{
+                display: none;
+            }
+        }
+        .transaction_type_section_dropdown{
+            background: #F1F1F1;
+            border-radius: 20px;
+            padding: 6px 10px;
+            border: none;
+            color: #9C9C9C;
+            appearance:none;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            -ms-appearance:none;
+            padding-right: 50px;
+            font-family: $NunitoBold;
+
+            option{
+                border-radius: 20px;
+                font-family: $NunitoBold;
+            }
+        }
+
+        .transaction_type_section_dropdown_caret{
+            color: #A6A6A6;
+            font-size: 40px;
+            position: absolute;
+            right: 30px;
+        }
+
+        @media screen and (max-width:320px){
+            .transaction_type_section_dropdown_caret{
+                right: 50px;
+            }
+        }
+    }
+
+
+
+    .recent_activities_container{
+
+        .recent_activities_container_header{
+            display: flex;
+            align-items: center;
+            padding: 15px 10px;
+
+            .recent_activities_container_header_title{
+                font-family: $NunitoBold;
+                margin-right: auto;
+                font-size: 16px;
+            }
+            .recent_activities_container_header_more{
+                font-size: 12px;
+            }
+        }
+
+        .recent_activities_container_content{
+
+            .activities_list{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                .activity{
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0px;
+
+                    .activity_icon{
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #fafafa;
+                        margin: 10px;
+                        .icon{
+                            color: $secondary-color;
+                            font-size: 25px;
+                        }
+                    }
+                    .activity_details{
+                        display: block;
+                        width: -webkit-fill-available;
+                        padding: 15px;
+
+                        .type_and_units{
+                            display: flex;
+                            .type{
+                                margin-right: auto;
+                                font-family: $NunitoBold;
+                            }
+                           
+                            .units{
+                                font-family: $NunitoBold;                                
+                            }
+
+                            @media screen and (max-width: 320px){
+                                .type{
+                                    font-size: 13px;
+                                }
+                                .units{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .id_and_date{
+                            display: flex;
+                            .id{
+                                margin-right: auto;
+                                font-family: $NunitoRegular;
+                                color: #C8C8C8;
+                                font-size: 14px;
+                            }
+                            .date{
+                                font-family: $NunitoRegular;
+                                color: #C8C8C8;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+
+                .activity:nth-child(odd){
+                    background-color: #ffffff;
+                }
+    
+                .activity:nth-child(even){
+                    background-color: #fafafa;
+                }
+            }
+
+         
+        }
+
+        .recent_activities_container_footer{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            align-items: center;
+            width: 100%;
+            padding: 20px 10px;
+
+            .left_underline{
+                width: 35%;
+                height: 1px;
+                background: #ccc;
+            }
+            .more_centered{
+                font-family: $NunitoBold;
+                color: red;
+                margin: 0 auto;
+            }
+            .right_underline{
+                width: 35%;
+                height: 1px;
+                background: #ccc;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .right_drawer{
+        width: 300px;
+    }
+}
+

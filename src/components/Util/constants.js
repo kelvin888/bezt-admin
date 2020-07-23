@@ -1,0 +1,2 @@
+export const LEFTBAR_INITIAL_WIDTH = "73";
+export const LEFTBAR_EXPANDED_WIDTH = "210";
